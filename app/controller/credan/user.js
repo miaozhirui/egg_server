@@ -7,7 +7,10 @@ module.exports = class User extends BaseController {
         let {ctx} = this;
 
         try{    
-            await ctx.model.Credan.User.create({phone: "13913169273"})
+
+            let body = ctx.request.body;
+            
+            await ctx.model.Credan.User.create({phone: body.phone})
 
             this.success("提交成功")
         }catch(e) {
