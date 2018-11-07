@@ -38,7 +38,7 @@ module.exports = appInfo => {
         config.mongoose = {
 
             client: {
-                url: 'mongodb://127.0.0.1/dice-game'
+                url: 'mongodb://127.0.0.1/egg_server'
             }
         }
     } else {
@@ -48,8 +48,9 @@ module.exports = appInfo => {
                 options:{
                      useNewUrlParser: true,
                 },
-                // url: 'mongodb://credan:Credan!88@127.0.0.1/dice-game'
                 url: 'mongodb://127.0.0.1/egg_server'
+                // url: 'mongodb://credan:Credan!88@127.0.0.1/dice-game'
+                
             }
         }
     }

@@ -1,4 +1,6 @@
+
 'use strict';
+const CredanRouter = require('./routers/credan');
 
 /**
  * @param {Egg.Application} app - egg application
@@ -32,4 +34,7 @@ module.exports = app => {
     router.get('/api/daichao/getChannel', 'daichao.getChannel');
     router.post('/api/daichao/editChannel', 'daichao.editChannel');
     
+
+    //credan的相关的接口
+    CredanRouter(router)
 };
